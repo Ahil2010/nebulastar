@@ -30,7 +30,6 @@
 </noscript>
 
 <script type="module" src="aafia.js"></script>
-<img src="loader (2).gif" alt="GIF Image">
 <div id="response-container">
 <?php
 // Display previous prompts
