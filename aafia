@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aafia</title>
+<link rel="stylesheet" href="aafia.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@100..900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="x-icon" href="https://th.bing.com/th/id/OIG.GYLOpTmNoB5taNrqn7Xi?pid=ImgGn">
+
+
+</head>
+<body>
+<script type="importmap">
+{
+"imports": {
+"@google/generative-ai": "https://esm.run/@google/generative-ai"
+}
+}
+</script>
+<div id="perload">
+</div>
+
+
+<noscript>
+<meta http-equiv="refresh" content="0;url=no_js.html">
+<title>You have not allowed JavaScript redirecting...</title>
+</noscript>
+
+<script type="module" src="aafia.js"></script>
+<img src="loader (2).gif" alt="GIF Image">
+<div id="response-container">
+<?php
+// Display previous prompts
+foreach($previousPrompts as $prompt) {
+echo "<p>Aafia:<br> Hello! I am Aafia. How can I assist you today?</p>
+</div>
+<form action="" method="post" class="p-2 h-fit" id="chat-form">
+    <textarea name="prompt" id="prompt" cols="30" rows="4" class="w-full p-2 rounded-md resize-none focus:outline-none" placeholder="Enter message here..."></textarea>
+    <button type="button" onclick="sendMessage()" class="w-full p-1 bg-gemDeep rounded text-white">
+      Send
+    </button>
+    <div class="relative px-2 py-2 text-center text-xs text-token-text-secondary md:px-[60px]">
+      <span>Aafia can make mistakes. Consider checking important information.</span>
+    </div>
+  </form>
+<footer>
+<p>&copy; 2024 Nebula Star. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+
+*{
+    font-family: 'poppins' ,Nunito Sans;
+}
+
+
+
+body{
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(1.jpg);
+
+  position: relative;
+}
+body::before{
+      content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(91, 91, 91, 0.5); /* Adjust the alpha for transparency */
+  z-index: -1;
+  backdrop-filter: blur(5px);
+}
+
+
+nav
+{
+
+    flex: 1;
+
+    position: fixed;
+
+    right: 0;
+
+    font-family: 'poppins' ,Nunito Sans;
+
+}
+
+
+nav ul 
+
+{
+
+    display: inline-block;
+
+    list-style: none;
+
+    font-family: 'poppins' ,Nunito Sans;
+}
+
+nav ul li
+
+{
+
+    display: inline-block;
+
+    margin-right: 90px;
+
+    font-family: 'poppins' ,Nunito Sans;
+
+    margin-top: 0px;
+
+}
+
+nav ul li a
+
+{
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    font-family: 'poppins' ,Nunito Sans;
+
+    color: white;
+
+
+}
+
+nav ul li a:hover
+
+{
+
+    color: gray;
+
+}
+
+.row
+
+{
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    font-family: 'poppins' ,Nunito Sans;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: Center other items horizontally */
+}
+
+.labels {
+    align-self: flex-start; /* Align the .labels element at the top */
+    min-height: 0vh;
+}
+
+
+.col-1
+
+{
+
+    flex-basis: 50%;
+
+    min-width: 300px;
+    font-family: 'poppins' ,Nunito Sans;
+
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+
+
+
+.hide-form .input-field {
+    display: none;
+}
+
+.animate-thick-bar {
+    animation: animate-thick-bar 1s ease forwards;
+}
+
+@keyframes animate-thick-bar {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0;
+    }
+}
+
+
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field .input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+    caret-color: #fff;
+}
+
+.input-field .input:focus{
+    background: rgba(255,255,255,0.3);
+}
+
+.input-field i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.my-link {
+    text-decoration: none;
+}
+
+.my-box {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.usernameInput {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+}
+
+.submit {
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    height: 45px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .3s ;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'poppins' ,Nunito Sans;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.two-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.one{
+    display: flex;
+}
+
+label a{
+    text-decoration: none;
+    color: #fff;
+}
+.input-field .input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 0 0 45px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+    position: relative; /* Add relative positioning to the parent element */
+}
+.input-field .input:focus::placeholder {
+    top: -10px; /* Position the placeholder text above the input text */
+    left: 45px;
+    font-size: 12px;
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+.input-field .input::placeholder {
+    position: absolute; /* Position the placeholder text */
+    top: 50%; /* Center the placeholder text vertically */
+    transform: translateY(-50%);
+    left: 45px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.3s ease-out;
+}
+.zoom-in {
+    animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+#zoomable-content {
+    /* Set the initial scale to 1 (no zoom) */
+    transform: scale(1);
+    /* Set the transition property to smoothly transition the scale */
+    transition: transform 0.5s ease;
+}
+
+.zoomed {
+    /* Scale the content up to 1.2x its original size (zoom in) */
+    transform: scale(1.2);
+}
+
+.submit button {
+    display: none;
+}
+
+.submit p {
+    margin-top: 10px;
+    cursor: pointer;
+}
